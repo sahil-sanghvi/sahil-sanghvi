@@ -1,10 +1,13 @@
 <h3 align="center">Hi, I'm Sahil Sanghvi 👋</h3>
-<p align="center"><i>CS student @ University of Victoria — builds things end-to-end, database to deploy.</i></p>
+<p align="center"><i>CS student @ University of Victoria - builds things end-to-end, learn and implement.</i></p>
+
+
+
 ---
 
 ### About
 
-I study at the **University of Victoria** and spend most of my free time shipping side projects and hackathon builds — [precheckai](https://github.com/sahil-sanghvi/nwhacks2026-precheckai) at nwHacks 2026 being the latest. I care about how a project is put together end-to-end: schema design, API boundaries, and the infra that keeps it running, not just the UI on top. I write up some of that work over on [Devpost](https://devpost.com/sahilsanghvi29), and I'm currently open to internship/new-grad roles.
+I study at the **University of Victoria** and am currently in my 3rd year. I'm currently open to internship/new-grad roles.
 
 ### Pinned
 
