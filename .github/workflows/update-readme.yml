@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Sync "Now Shipping" and "Pinned" sections
+      - name: Sync "Pinned" section
         uses: actions/github-script@v7
         with:
           # A classic PAT with public_repo scope, stored as the PINNED_ITEMS_TOKEN
@@ -38,37 +38,6 @@ jobs:
                 '\n' + block + '\n' +
                 readme.slice(endIdx)
               );
-            }
-
-            // --- Now Shipping: most recently pushed public repo ---
-            const { data: repos } = await github.rest.repos.listForUser({
-              username: owner,
-              type: 'owner',
-              sort: 'pushed',
-              direction: 'desc',
-              per_page: 20,
-            });
-
-            const latest = repos.find(
-              (r) => !r.fork && !r.archived && !r.private && r.name !== owner
-            );
-
-            let latestBlock = '_Nothing to show yet._';
-            if (latest) {
-              const pushedDate = new Date(latest.pushed_at).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              });
-              const description = latest.description || 'No description provided.';
-              const language = latest.language ? ` \`${latest.language}\`` : '';
-              latestBlock = [
-                `**[${latest.name}](${latest.html_url})**${language}`,
-                '',
-                description,
-                '',
-                `_Last pushed: ${pushedDate}_`,
-              ].join('\n');
             }
 
             // --- Pinned: repos pinned on the profile, via GraphQL ---
@@ -111,7 +80,6 @@ jobs:
 
             const readmePath = 'README.md';
             let readme = fs.readFileSync(readmePath, 'utf8');
-            readme = replaceSection(readme, 'latest-build', latestBlock);
             readme = replaceSection(readme, 'pinned', pinnedBlock);
             fs.writeFileSync(readmePath, readme);
 
@@ -121,5 +89,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-          git commit -m "docs: sync now-shipping and pinned sections"
+          git commit -m "docs: sync pinned section"
           git push
