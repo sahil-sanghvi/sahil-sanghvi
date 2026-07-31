@@ -1,0 +1,91 @@
+name: Update README - Currently Building
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-latest-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch most recently pushed repo and update README
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const owner = context.repo.owner;
+
+            const { data: repos } = await github.rest.repos.listForUser({
+              username: owner,
+              type: 'owner',
+              sort: 'pushed',
+              direction: 'desc',
+              per_page: 20,
+            });
+
+            const candidate = repos.find(
+              (r) => !r.fork && !r.archived && !r.private && r.name !== owner
+            );
+
+            if (!candidate) {
+              core.info('No eligible public repo found, skipping README update.');
+              return;
+            }
+
+            const pushedDate = new Date(candidate.pushed_at).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            });
+
+            const description = candidate.description
+              ? candidate.description
+              : 'No description provided.';
+            const language = candidate.language ? ` \`${candidate.language}\`` : '';
+
+            const block = [
+              `**[${candidate.name}](${candidate.html_url})**${language}`,
+              '',
+              `${description}`,
+              '',
+              `_Last pushed: ${pushedDate}_`,
+            ].join('\n');
+
+            const readmePath = 'README.md';
+            const readme = fs.readFileSync(readmePath, 'utf8');
+            const startMarker = '<!--START_SECTION:latest-build-->';
+            const endMarker = '<!--END_SECTION:latest-build-->';
+            const startIdx = readme.indexOf(startMarker);
+            const endIdx = readme.indexOf(endMarker);
+
+            if (startIdx === -1 || endIdx === -1) {
+              core.setFailed('README markers not found.');
+              return;
+            }
+
+            const updated =
+              readme.slice(0, startIdx + startMarker.length) +
+              '\n' + block + '\n' +
+              readme.slice(endIdx);
+
+            if (updated !== readme) {
+              fs.writeFileSync(readmePath, updated);
+              core.info(`README updated with latest build: ${candidate.name}`);
+            } else {
+              core.info('README already up to date.');
+            }
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "docs: update currently building card"
+          git push
