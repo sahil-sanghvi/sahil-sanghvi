@@ -1,10 +1,5 @@
 <h3 align="center">Hi, I'm Sahil Sanghvi 👋</h3>
 <p align="center"><i>CS student @ University of Victoria — builds things end-to-end, database to deploy.</i></p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=18&duration=2800&pause=1400&color=6C63FF&center=true&vCenter=true&width=560&lines=Full-stack+by+day%2C+hackathons+by+weekend;Designing+systems%2C+not+just+screens;Currently+leveling+up+on+infra+%26+cloud" alt="intro" />
-</p>
-
 ---
 
 ### About
