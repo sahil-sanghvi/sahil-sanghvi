@@ -11,18 +11,6 @@
 
 I study at the **University of Victoria** and spend most of my free time shipping side projects and hackathon builds — [precheckai](https://github.com/sahil-sanghvi/nwhacks2026-precheckai) at nwHacks 2026 being the latest. I care about how a project is put together end-to-end: schema design, API boundaries, and the infra that keeps it running, not just the UI on top. I write up some of that work over on [Devpost](https://devpost.com/sahilsanghvi29), and I'm currently open to internship/new-grad roles.
 
-### Now Shipping
-
-<!--START_SECTION:latest-build-->
-**[sahil-sanghvi-projects](https://github.com/sahil-sanghvi/sahil-sanghvi-projects)** `Python`
-
-A repo of all software related projects 
-
-_Last pushed: July 25, 2026_
-<!--END_SECTION:latest-build-->
-
-<sub>Synced automatically to whatever public repo I pushed to most recently.</sub>
-
 ### Pinned
 
 <!--START_SECTION:pinned-->
@@ -79,9 +67,9 @@ _Last pushed: July 25, 2026_
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./.github/assets/metrics-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./.github/assets/metrics-light.svg">
-    <img src="./.github/assets/metrics-light.svg" alt="GitHub metrics: stats, top languages, and contribution calendar" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahil-sanghvi/sahil-sanghvi/main/.github/assets/metrics-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahil-sanghvi/sahil-sanghvi/main/.github/assets/metrics-light.svg">
+    <img src="https://raw.githubusercontent.com/sahil-sanghvi/sahil-sanghvi/main/.github/assets/metrics-light.svg" alt="GitHub metrics: stats, top languages, and contribution calendar" />
   </picture>
 </p>
 
