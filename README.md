@@ -1,4 +1,4 @@
-<h1 align="center">Sahil Sanghvi</h1>
+<h3 align="center">Hi, I'm Sahil Sanghvi 👋</h3>
 <p align="center"><i>CS student @ University of Victoria — builds things end-to-end, database to deploy.</i></p>
 
 <p align="center">
@@ -63,17 +63,7 @@ I study at the **University of Victoria** and spend most of my free time shippin
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 
-### Metrics
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahil-sanghvi/sahil-sanghvi/main/.github/assets/metrics-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahil-sanghvi/sahil-sanghvi/main/.github/assets/metrics-light.svg">
-    <img src="https://raw.githubusercontent.com/sahil-sanghvi/sahil-sanghvi/main/.github/assets/metrics-light.svg" alt="GitHub metrics: stats, top languages, and contribution calendar" />
-  </picture>
-</p>
-
-### Elsewhere
+### Connect With Me
 
 <p align="left">
   <a href="https://github.com/sahil-sanghvi"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
