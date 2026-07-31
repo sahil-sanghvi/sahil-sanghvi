@@ -14,6 +14,11 @@ I study at the **University of Victoria** and spend most of my free time shippin
 ### Now Shipping
 
 <!--START_SECTION:latest-build-->
+**[sahil-sanghvi-projects](https://github.com/sahil-sanghvi/sahil-sanghvi-projects)** `Python`
+
+A repo of all software related projects 
+
+_Last pushed: July 25, 2026_
 <!--END_SECTION:latest-build-->
 
 <sub>Synced automatically to whatever public repo I pushed to most recently.</sub>
@@ -21,6 +26,14 @@ I study at the **University of Victoria** and spend most of my free time shippin
 ### Pinned
 
 <!--START_SECTION:pinned-->
+| Project | Description | Language |
+| --- | --- | --- |
+| [sahil-sanghvi-projects](https://github.com/sahil-sanghvi/sahil-sanghvi-projects) | A repo of all software related projects  | Python |
+| [lsi26-uvic-khlf](https://github.com/sahil-sanghvi/lsi26-uvic-khlf) | RBC Let's Solve it 2026 Spring Cohort - Team Island Insight x KHLF | Jupyter Notebook |
+| [nwhacks2026-precheckai](https://github.com/sahil-sanghvi/nwhacks2026-precheckai) | Project for nwHacks 2026 | TypeScript |
+| [exodetect](https://github.com/sahil-sanghvi/exodetect) | Project for NASA SpaceApps Challenge 2025 | TypeScript |
+| [palendar](https://github.com/sahil-sanghvi/palendar) | Project for Human Computer Interaction | TypeScript |
+| [Medilink](https://github.com/sahil-sanghvi/Medilink) | SENG project to implement CRUD operations and encryption using JSON and pickle | Python |
 <!--END_SECTION:pinned-->
 
 <sub>Synced automatically from the repos pinned on my profile — repin something and this updates within a few hours.</sub>
