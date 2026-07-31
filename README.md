@@ -76,7 +76,10 @@ I study at the **University of Victoria** and spend most of my free time shippin
 
 <p align="left">
   <a href="https://github.com/sahil-sanghvi"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  <a href="https://ca.linkedin.com/in/sahil-mit-sanghvi"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="https://leetcode.com/u/sahil-sanghvi/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black" /></a>
   <a href="https://devpost.com/sahilsanghvi29"><img src="https://img.shields.io/badge/Devpost-003E54?style=flat-square&logo=devpost&logoColor=white" /></a>
+  <img src="https://img.shields.io/badge/Discord-sahilsanghvi-5865F2?style=flat-square&logo=discord&logoColor=white" />
 </p>
 
 <sub>🤖 Sections marked "Synced automatically" are updated by GitHub Actions on a schedule — see <code>.github/workflows</code>.</sub>
