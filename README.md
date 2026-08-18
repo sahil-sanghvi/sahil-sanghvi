@@ -12,7 +12,14 @@ I study at the **University of Victoria** and am currently in my 3rd year. I'm c
 ### Pinned
 
 <!--START_SECTION:pinned-->
-_No pinned repositories found._
+| Project | Description | Language |
+| --- | --- | --- |
+| [sahil-sanghvi-projects](https://github.com/sahil-sanghvi/sahil-sanghvi-projects) | A repo of all software related projects  | Python |
+| [lsi26-uvic-khlf](https://github.com/sahil-sanghvi/lsi26-uvic-khlf) | RBC Let's Solve it 2026 Spring Cohort - Team Island Insight x KHLF | Jupyter Notebook |
+| [nwhacks2026-precheckai](https://github.com/sahil-sanghvi/nwhacks2026-precheckai) | Project for nwHacks 2026 | TypeScript |
+| [exodetect](https://github.com/sahil-sanghvi/exodetect) | Project for NASA SpaceApps Challenge 2025 | TypeScript |
+| [palendar](https://github.com/sahil-sanghvi/palendar) | Project for Human Computer Interaction | TypeScript |
+| [Medilink](https://github.com/sahil-sanghvi/Medilink) | SENG project to implement CRUD operations and encryption using JSON and pickle | Python |
 <!--END_SECTION:pinned-->
 
 <sub>Synced automatically from the repos pinned on my profile — repin something and this updates within a few hours.</sub>
