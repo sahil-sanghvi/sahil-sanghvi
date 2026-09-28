@@ -14,7 +14,7 @@ I study at the **University of Victoria** and am currently in my 3rd year. I'm c
 <!--START_SECTION:pinned-->
 | Project | Description | Language |
 | --- | --- | --- |
-| [sahil-sanghvi-projects](https://github.com/sahil-sanghvi/sahil-sanghvi-projects) | A repo of all software related projects  | Python |
+| [sahil-sanghvi-uvic](https://github.com/sahil-sanghvi/sahil-sanghvi-uvic) | Index of my University of Victoria coursework repos, one per course | — |
 | [lsi26-uvic-khlf](https://github.com/sahil-sanghvi/lsi26-uvic-khlf) | RBC Let's Solve it 2026 Spring Cohort - Team Island Insight x KHLF | Jupyter Notebook |
 | [nwhacks2026-precheckai](https://github.com/sahil-sanghvi/nwhacks2026-precheckai) | Project for nwHacks 2026 | TypeScript |
 | [exodetect](https://github.com/sahil-sanghvi/exodetect) | Project for NASA SpaceApps Challenge 2025 | TypeScript |
